@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Institución Académica</h1>
+    <p class="bienvenida">Bienvenidos a nuestra página web.</p>
+
+    <h2>Formulario de Registro</h2>
+    <form id="miFormulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" autocomplete="name">
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo" autocomplete="email">
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" autocomplete="tel">
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="resultado" role="status" aria-live="polite"></p>
+  </main>
+  <script src="codigo.js"></script>
+</body>
+</html>
